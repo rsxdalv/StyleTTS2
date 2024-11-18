@@ -26,7 +26,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install Deps
-        run: python -m pip install . torch==2.3.1 wheel ninja
+        run: python -m pip install . torch==2.3.1 wheel ninja build
       - name: Build the wheel
         run: python -m build --wheel --outdir dist/
       - run: du -h dist/*
