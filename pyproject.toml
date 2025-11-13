@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "tts-webui.styletts2"
-version = "0.1.10"
+version = "0.1.11"
 description = "StyleTTS 2: Towards Human-Level Text-to-Speech through Style Diffusion and Adversarial Training with Large Speech Language Models. Original authors: Yinghao Aaron Li, Cong Han, Vinay S. Raghavan, Gavin Mischler, Nima Mesgarani. "
 authors = ["Sidharth Rajaram <rajaram@berkeley.edu>"]
 homepage = "https://github.com/sidharthrajaram/StyleTTS2"
 repository = "https://github.com/sidharthrajaram/StyleTTS2"
 license = "MIT"
 readme = "README.md"
+packages = [{include = "styletts2", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
